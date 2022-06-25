@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    nexus3:
+        ports:
+            - '8081:8081'
+        container_name: nexus
+        volumes:
+            - 'nexus-data:/nexus-data'
+        image: klo2k/nexus3
+
+volumes:
+  nexus-data:
