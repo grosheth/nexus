@@ -29,6 +29,7 @@ spec:
           name: nexus
           ports:
             - containerPort: 8081
+            - containerPort: 8082
           resources: {}
           volumeMounts:
             - mountPath: /nexus-data
